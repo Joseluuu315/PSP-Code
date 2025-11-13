@@ -10,12 +10,16 @@ public class Main {
      */
 
     public static void main(String[] args) {
+        Herramientas agente1 = new Herramientas("A");
+        Herramientas agente1_2 = new Herramientas("A");
+        Herramientas agente2 = new Herramientas("B");
+        Herramientas agente3 = new Herramientas("C");
 
-        Herramientas herramientas = new Herramientas();
-        herramientas.usarDestornillador();
-        herramientas.usarTaladro();
 
-
+        agente1.start();
+        agente1_2.start();
+        agente2.start();
+        agente3.start();
     }
 
 
